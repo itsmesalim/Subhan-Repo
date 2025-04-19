@@ -19,7 +19,7 @@ export default function Title({ heading, title }: TitleProps) {
         </div>
 
         <img
-          src="/src/assets/images/subhan.png"
+          src="/assets/images/subhan.png"
           alt="subhan"
           className="justify-self-end rounded-full size-[345px]"
         />

@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className="grid grid-flow-col grid-rows-1 gap-9 mx-48 my-8 ">
         <div className=" w-56 h-64">
-          <img src="/src/assets/images/subhan nu.jpg" alt="subhan_nu" />
+          <img src="/assets/images/subhan nu.jpg" alt="subhan_nu" />
         </div>
         <div className="grid grid-rows-1 gap-4 mt-3  ">
           <p className="font-Bitter font-bold mb-2 text-[18px] leading-[25px] text-text-[#45818e] ">
@@ -69,56 +69,56 @@ export default function Home() {
 
       <div className="grid grid-cols-3 gap-4 mx-48 mb-8">
         <PostsCard
-          src="/src/assets/images/Inam phd.jpeg"
+          src="/assets/images/Inam phd.jpeg"
           title="As External Examiner for Ph.D. Evaluation"
           description="Appointment as an external examiner for the Ph.D thesis defense of Inam Ur Rehman at the University of Malakand, Dir Lower (KPK)."
           footer="January 19, 2022"
         />
 
         <PostsCard
-          src="/src/assets/images/examiner.png"
+          src="/assets/images/examiner.png"
           title="As External Examiner for Ph.D. Evaluation"
           description="Appointment as an external examiner for the Ph.D thesis defense of Saeed Ullah Jan at the University of Malakand, Dir Lower (KPK). "
           footer="November 30, 2021"
         />
 
         <PostsCard
-          src="/src/assets/images/Convocation 2021.JPG"
+          src="/assets/images/Convocation 2021.JPG"
           title="67th Convocation, FAST, NUCES, Islamabad"
           description="Participated in 67th Convocation, at FAST, National University of Computer and Emerging Sciences, Islamabad. "
           footer="November 20-21, 2021"
         />
 
         <PostsCard
-          src="/src/assets/images/CTI.jpg"
+          src="/assets/images/CTI.jpg"
           title="Cyber Threat Intelligence Summit"
           description="Attended 4th International conference on Cyber threat Intelligence at Marriot hotel, Islamabad."
           footer="November 17, 2021"
         />
 
         <PostsCard
-          src="/src/assets/images/BOS_Chitral.jpg"
+          src="/assets/images/BOS_Chitral.jpg"
           title="Member Board of Studies"
           description="Invited to the Board of Studies meeting at the University of Chitral (KPK). "
           footer="November 12, 2021"
         />
 
         <PostsCard
-          src="/src/assets/images/GulzarPhD.jpg"
+          src="/assets/images/GulzarPhD.jpg"
           title="As External Examiner for Ph.D. Evaluation"
           description="Appointment as an external examiner for the Ph.D thesis defense of Gulzar Mehmood at the University of Malakand, Dir Lower (KPK). "
           footer="March 5, 2021"
         />
 
         <PostsCard
-          src="/src/assets/images/defense-SUllah.jpg"
+          src="/assets/images/defense-SUllah.jpg"
           title="Ph.D Defense "
           description="Successfully depended my Ph.D. from University of Klagenfurt, Austria and University of Genoa, Italy. "
           footer="April 23, 2019"
         />
 
         <PostsCard
-          src="/src/assets/images/IoT.png"
+          src="/assets/images/IoT.png"
           title="More cyber security for intelligent cameras "
           description="To simplify our daily routines, devices designed for the “Internet of Things (IoT)” are usually equipped with cameras that can record images and videos, and transmit these to other devices. Subhan ..."
           footer={
@@ -129,42 +129,42 @@ export default function Home() {
         />
 
         <PostsCard
-          src="/src/assets/images/Bilbao conference.jpg"
+          src="/assets/images/Bilbao conference.jpg"
           title="Global Internet of Things Summit (GIoTS) "
           description="Presented research in the Global IoT Summit (GIoTS) endorsed by IEEE, and driven by the IEEE Subcommittee on IoT and the IoT Forum in Bilbao, Spain. "
           footer="June 4-7, 2018"
         />
 
         <PostsCard
-          src="/src/assets/images/graz.jpg"
+          src="/assets/images/graz.jpg"
           title="IACR Cryptology Spring School on Security & Correctness in the Internet of Things (IoT) "
           description="Attended IACR Cryptology Spring School on Security & Correctness in the Internet of Things (IoT) and presented (research work in progress). It was organized by the research center “Dependable Internet of Things“, located at Graz University of Technology, Graz, Austria. "
           footer="May 8-12, 2017"
         />
 
         <PostsCard
-          src="/src/assets/images/IoT Switzerland.jpg"
+          src="/assets/images/IoT Switzerland.jpg"
           title="Global Internet of Things Summit (GIOTS) Geneva "
           description="Presented research in the Global IoT Summit (GIOTS) in international conference and IoT Week at the International Conference Centre in Geneva, Switzerland. "
           footer="June 6-9, 2017"
         />
 
         <PostsCard
-          src="/src/assets/images/Cavelase.jpg"
+          src="/assets/images/Cavelase.jpg"
           title="EMJD-ICE Summer School"
           description="Presented research (work in progress) in IEEE-EURASIP Summer School on Signal Processing (S3P-2016) Organized by the IEEE SPS Italy Chapter and GTTI with the sponsorship of IEEE and EURASIP. "
           footer="September 4-10, 2016"
         />
 
         <PostsCard
-          src="/src/assets/images/Summer school uk.JPG"
+          src="/assets/images/Summer school uk.JPG"
           title="EMJD-ICE Summer School on Intelligent Sensing  2015"
           description="Presented research (work in progress) in EMJD-ICE Summer School of Intelligent Sensing Summer School for Interactive and Cognitive Environments at Queen Mary University of London, UK."
           footer="September 1-4, 2015"
         />
 
         <PostsCard
-          src="/src/assets/images/h_da Germany.jpg"
+          src="/assets/images/h_da Germany.jpg"
           title="h_da IDEAS Erasmus Mundus Exchange Program  2014"
           description="First day of Joining IDEAS Exchange program Darmstadt University of Applied Science (h_da), Germany."
           footer="September 11, 2014"
