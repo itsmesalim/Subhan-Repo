@@ -1,3 +1,4 @@
+//import PostsCard from "@/components/card";
 import PostsCard from "@/components/card";
 import Header from "@/components/header/header";
 import Title from "@/components/title.tsx";
@@ -7,10 +8,11 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
+      {/* the above tag<> is called fragements and required in react */}
       <Header />
       <Title
         heading="Subhan Ullah"
-        title={`Assistant Professor${"\n"} FAST, National University of Computer and Emerging Sciences, Islamabad.`}
+        title={`Associate Professor${"\n"} FAST, National University of Computer and Emerging Sciences, Islamabad.`}
       />
 
       <div className="grid grid-flow-col grid-rows-1 gap-9 mx-48 my-8 ">
@@ -25,7 +27,7 @@ export default function Home() {
             <Link to="/biography" className="text-[#4A86E8]">
               Dr. Subhan Ullah
             </Link>
-            &nbsp;is an Assistant Professor in FAST Computing, Department of
+            &nbsp;is an Associate Professor in FAST Computing, Department of
             Computer Networks and Cybersecurity, Fast School of Computing,
             <Link
               to="http://www.nu.edu.pk"
@@ -123,7 +125,7 @@ export default function Home() {
           description="To simplify our daily routines, devices designed for the “Internet of Things (IoT)” are usually equipped with cameras that can record images and videos, and transmit these to other devices. Subhan ..."
           footer={
             <button className="border border-headercolor bg-white text-headercolor hover:bg-[#e8e9ea] p-1.5 w-full rounded">
-              Learn more...
+              <Link to="https://bernhardrinner.com/?p=6245" target="blank">Learn more...</Link>
             </button>
           }
         />
