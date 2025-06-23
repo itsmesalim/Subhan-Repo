@@ -13,9 +13,9 @@ export default function Title({ heading, title }: TitleProps) {
           <h1 className="font-Bitter font-bold text-6xl leading-tight text-[#45818e]">
             {heading}
           </h1>
-          <p className="font-Bitter whitespace-pre-line text-[#45818e] font-normal text-[26px] leading-[29px]">
+          <h2 className="font-Bitter whitespace-pre-line text-[#45818e] font-normal text-[26px] leading-[29px]">
             {title}
-          </p>
+          </h2>
         </div>
 
         <img

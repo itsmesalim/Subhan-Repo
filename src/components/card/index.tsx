@@ -9,10 +9,10 @@ import {
 import { ReactNode } from "react";
 
 interface PostCardProps {
-  src: string;
-  title: string;
-  description: string;
-  footer: string | ReactNode;
+  src?: string;
+  title?: string | ReactNode;
+  description?: string | ReactNode;
+  footer?: string | ReactNode;
 }
 export default function PostsCard({
   src,
@@ -21,21 +21,23 @@ export default function PostsCard({
   footer,
 }: PostCardProps) {
   return (
-    <>
-      <Card className="w-[350px] ">
-        <CardHeader>
-          <img src={src} alt="image not found" />
-          <CardTitle className="font-Bitter font-bold text-[18px] leading-6 text-center text-[#45818e] ">
-            {title}
-          </CardTitle>
-        </CardHeader>
+    <Card className="w-[355px] border-none shadow-none ">
+      <CardHeader className="p-0">
+        <img src={src} alt="image not found" />
+        <CardTitle className="p-6 font-Bitter font-bold text-[20px] leading-[26px] text-[#45818e] text-center justify-center]">
+          {title}
+        </CardTitle>
+      </CardHeader>
 
-        <CardContent>
-          <CardDescription>{description}</CardDescription>
-        </CardContent>
+      <CardContent className="p-0">
+        <CardDescription className="px-3 font-Bitter font-normal text-[16.5px] leading-[26px] text-[#000000] text-center justify-center">
+          {description}
+        </CardDescription>
+      </CardContent>
 
-        <CardFooter className="flex justify-between">{footer}</CardFooter>
-      </Card>
-    </>
+      <CardFooter className="p-6 font-Bitter font-normal text-[16.5px] leading-[26px] text-[#000000] text-center justify-center">
+        {footer}
+      </CardFooter>
+    </Card>
   );
 }
