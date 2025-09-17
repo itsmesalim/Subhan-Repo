@@ -21,7 +21,7 @@ export default function PostsCard({
   footer,
 }: PostCardProps) {
   return (
-    <Card className="w-[355px] border-none shadow-none ">
+    <Card className="w-[355px] border-none shadow-none">
       <CardHeader className="p-0">
         <img src={src} alt="image not found" />
         <CardTitle className="p-6 font-Bitter font-bold text-[20px] leading-[26px] text-[#45818e] text-center justify-center]">

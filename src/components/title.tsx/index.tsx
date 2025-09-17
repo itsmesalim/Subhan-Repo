@@ -8,7 +8,7 @@ interface TitleProps {
 export default function Title({ heading, title }: TitleProps) {
   return (
     <>
-      <div className="ml-48 grid grid-cols-3 justify-items-start">
+      <div className="ml-24 grid grid-cols-3 justify-items-start">
         <div className=" col-span-2 space-y-5 content-center">
           <h1 className="font-Bitter font-bold text-6xl leading-tight text-[#45818e]">
             {heading}
@@ -25,7 +25,7 @@ export default function Title({ heading, title }: TitleProps) {
         />
       </div>
 
-      <div className="mx-48">
+      <div className="mx-24">
         <Separator className="h-0.5" />
       </div>
     </>

@@ -11,7 +11,7 @@ export default function About() {
       <Header />
       <Title heading="About me" title="This is my about page." />
 
-      <div className="gap-9 mx-48 my-8">
+      <div className="gap-9 mx-24 my-8">
         <div className="grid grid-flow-col grid-rows-1 gap-[120px] ">
           <PostsCard
             src="/assets/images/subhan nu.jpg"
