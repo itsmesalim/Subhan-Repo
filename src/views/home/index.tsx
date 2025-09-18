@@ -15,7 +15,7 @@ export default function Home() {
         title={`Associate Professor${"\n"} FAST, National University of Computer and Emerging Sciences, Islamabad.`}
       />
       <div className="gap-9 mx-24 my-8">
-        <div className="grid grid-flow-col grid-rows-1 gap-9  ">
+        <div className="grid grid-flow-col grid-rows-1 gap-9">
           <img
             src="/assets/images/subhan nu.jpg"
             alt="subhan_nu"
