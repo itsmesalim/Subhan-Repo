@@ -17,26 +17,26 @@ export default function About() {
             src="/assets/images/subhan nu.jpg"
             title={
               <>
-                <span className="font-Bitter font-normal text-[16px] text-[#000000] text-start">
+                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
                   Email:&nbsp;
                 </span>
                 <Link
                   to="https://mail.google.com/mail/u/0/#inbox"
                   target="_blank"
-                  className="underline font-Bitter font-normal text-[16px] text-[#000000] text-start"
+                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
                 >
                   subhan.ullah@nu.eud.pk
                 </Link>
-              </>
-            }
-            description={
-              <>
-                <p className="font-Bitter font-normal text-[16px] text-[#000000] text-center  ">
+                <br />
+
+                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
                   Cell phone: 00923439733083
-                </p>
-                <p className="font-Bitter font-normal text-[16px] text-[#000000] text-center ">
+                </span>
+                <br />
+
+                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
                   Love to hear from you...
-                </p>
+                </span>
               </>
             }
             footer={
@@ -46,14 +46,17 @@ export default function About() {
                 </Link>
               </button>
             }
+            titleClassName="p-2 font-Bitter font-bold text-[20px] leading-[18px] text-[#45818e] text-start justify-center]"
+            footerClassName="p-1 font-Bitter font-normal text-[16.5px] leading-[22px] text-[#2F2F2F] text-center justify-center"
           />
+
           <div className="grid grid-rows-1 gap-4 my-3 ">
             <Separator className="h-1" />
             <h2 className="py-8 font-Bitter font-bold mt-2 text-[20px] leading-[25px] text-[#45818e] ">
               Hi Everyone! you may know more about Dr. Subhan Ullah here...
             </h2>
             <Separator className="h-1" />
-            <p className="pt-3 font-Bitter font-normal text-[17px] leading-[20px] text-[#000000] text-justify">
+            <p className="pt-3 font-Bitter font-normal text-[17px] leading-[20px] text-[#5A5A5A] text-justify">
               This website has been started to share the story of educational,
               professional and technical journey of Subhan Ullah. He believes
               that sharing is caring and life-giving. There is still a long way
@@ -64,7 +67,7 @@ export default function About() {
               coffee and feel free to look around!
             </p>
 
-            <p className="pt-1 font-Bitter font-normal text-[17px] leading-[22px] text-[#000000] text-justify">
+            <p className="pt-1 font-Bitter font-normal text-[17px] leading-[22px] text-[#5A5A5A] text-justify">
               Subhan Ullah is an Assistant Professor and a proactive researcher
               at the Department of Computer Networks and Cybersecurity, FAST
               School of Computing, National University of Computer and Emerging
@@ -76,7 +79,7 @@ export default function About() {
               </Link>
             </button>
 
-            <p className="font-Bitter font-normal text-[17px] leading-[22px] text-[#000000] text-justify">
+            <p className="font-Bitter font-normal text-[17px] leading-[22px] text-[#5A5A5A] text-justify">
               He has received his early education from GHSS Samar bagh,
               Intermediate education from GDC Timergara, and Bachelor Degree in
               Computer Science (BSCS) from Malakand University, District Dir
@@ -95,7 +98,7 @@ export default function About() {
               </Link>
             </button>
 
-            <p className="font-Bitter font-normal text-[17px] leading-[22px] text-[#000000] text-justify">
+            <p className="font-Bitter font-normal text-[17px] leading-[22px] text-[#5A5A5A] text-justify">
               Dr. Subhan received talent scholarship from Worker Welfare Board
               Pakistan during his BS and MS study. Thanks to Worker Welfare
               Board, and Erasmus Mundus Scholarship programs for supporting all

@@ -21,7 +21,7 @@ export default function Title({ heading, title }: TitleProps) {
         <img
           src="/assets/images/subhan.png"
           alt="subhan"
-          className="justify-self-end rounded-full size-[345px]"
+          className="justify-self-end rounded-full size-[345px] md:inline-flex hidden"
         />
       </div>
 

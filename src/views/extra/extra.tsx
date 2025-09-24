@@ -1,3 +1,160 @@
+
+
+
+
+
+
+// import {
+//   FormControl,
+//   FormField,
+//   FormMessage,
+// } from "@/components/ui/form";
+
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+// import { Control } from "react-hook-form";
+// import Input from "../ui/input";
+// import { useState } from "react";
+
+// export type SelectFormProps = {
+//   name: string;
+//   label?: string;
+//   placeholder?: string;
+//   options?: { label: string; value: string }[];
+//   control?: Control<any>;
+//   isRequired?: boolean;
+//   onChange?: (value: string) => void;
+//   variant?: "default" | "login" | "custom1";
+//   labelClassName?: string;
+//   inputClassName?: string;
+//   containerClassName?: string;
+// };
+
+// export function FormSelect({
+//   control,
+//   name,
+//   label,
+//   placeholder,
+//   options,
+//   isRequired,
+//   onChange,
+//   variant = "default",
+//   containerClassName,
+//   inputClassName,
+//   labelClassName,
+// }: SelectFormProps) {
+//   const [search, setSearch] = useState("");
+
+//   const filteredOptions = (options ?? []).filter((option) =>
+//     option.label.toLowerCase().includes(search.toLowerCase())
+//   );
+
+//   const hasLabel = Boolean(label);
+
+//   const layoutClasses =
+//     containerClassName ??
+//     (variant === "login"
+//       ? "flex-col gap-4 items-center"
+//       : variant === "custom1"
+//       ? "flex flex-col bg-gray-100 p-4 rounded-md"
+//       : hasLabel
+//       ? "flex gap-4 items-center"
+//       : "");
+
+//   return (
+//     <FormField
+//       control={control}
+//       name={name}
+//       render={({ field }) => (
+//         <div className={layoutClasses}>
+//           {hasLabel && (
+//             <label
+//               className={
+//                 labelClassName
+//                   ? labelClassName
+//                   : "flex-1 p-2 font-bold text-wrap"
+//               }
+//             >
+//               {label}
+//               {isRequired && <span className="text-red-600"> *</span>}
+//             </label>
+//           )}
+
+//           <div className={hasLabel ? "flex-[2]" : ""}>
+//           {/* <div className="flex-1"> */}
+//             <Select
+//               value={field.value}
+//               onValueChange={(val) => {
+//                 field.onChange(val);
+//                 onChange?.(val);
+//               }}
+//             >
+//               <FormControl>
+//                 <SelectTrigger
+//                   className={
+//                     inputClassName
+//                       ? inputClassName
+//                       : "p-2 rounded border border-input border-zinc-950 text-nowrap w-full"
+//                   }
+//                 >
+//                   <SelectValue placeholder={placeholder} />
+//                 </SelectTrigger>
+//               </FormControl>
+
+//               <SelectContent>
+//                 <div className="p-2">
+//                   <Input
+//                     className="w-full border rounded p-2"
+//                     placeholder="Search..."
+//                     value={search}
+//                     onChange={(e) => setSearch(e.target.value)}
+//                   />
+//                 </div>
+//                 {filteredOptions.length > 0 ? (
+//                   filteredOptions.map((option) => (
+//                     <SelectItem key={option.value} value={option.value}>
+//                       {option.label}
+//                     </SelectItem>
+//                   ))
+//                 ) : (
+//                   <div className="p-2 text-center text-gray-500">
+//                     No results found
+//                   </div>
+//                 )}
+//                 {/* {options?.map((option) => (
+//                   <SelectItem key={option.label} value={option.value}>
+//                     {option.label}
+//                   </SelectItem>
+//                 ))} */}
+//               </SelectContent>
+//             </Select>
+//             <FormMessage className="text-red-600 text-sm font-normal" />
+//           </div>
+//         </div>
+//       )}
+//     />
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //              description={
 //               <>
 //                 <Link

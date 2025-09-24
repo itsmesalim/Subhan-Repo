@@ -12,7 +12,7 @@ const navlinkClass =
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="md:inline-flex hidden">
       <NavigationMenuItem className={navlinkClass}>
         <NavigationMenuLink asChild>
           <Link to="/">Home</Link>
