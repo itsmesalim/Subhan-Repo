@@ -59,7 +59,13 @@ export default function PostsCard({
         </CardDescription>
       </CardContent>
 
-      <CardFooter className={footerClassName ? footerClassName : "p-6 font-Bitter font-normal text-[16.5px] leading-[26px] text-[#2F2F2F] text-center justify-center"}>
+      <CardFooter
+        className={
+          footerClassName
+            ? footerClassName
+            : "p-6 font-Bitter font-normal text-[16.5px] leading-[26px] text-[#2F2F2F] text-center justify-center"
+        }
+      >
         {footer}
       </CardFooter>
     </Card>

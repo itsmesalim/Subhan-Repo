@@ -3,7 +3,7 @@ import { NavigationMenuDemo } from "../navigationMenu";
 
 export default function Header() {
   return (
-    <nav className="bg-headercolor sticky top-0 w-full h-14 flex space-x-4">
+    <nav className="bg-headercolor sticky top-0 w-full h-14 flex space-x-4 z-50">
 
      
       <div className="float-left p-4 text-white font-bold text-nowrap w-1/3">

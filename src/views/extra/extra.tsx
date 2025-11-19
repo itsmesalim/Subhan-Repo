@@ -1,8 +1,621 @@
+// import { ReactNode, useState } from "react";
+// import { ChevronDown } from "lucide-react";
+// import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 
+// interface AccordionCardProps {
+//   /** Main image on left */
+//   imageSrc?: string;
 
+//   /** Title on right side */
+//   title?: string | ReactNode;
 
+//   /** Description on right */
+//   description?: string | ReactNode;
 
+//   /** Optional bottom expandable content */
+//   expandContent?: ReactNode;
 
+//   /** Custom styling */
+//   className?: string;
+//   imageClassName?: string;
+//   titleClassName?: string;
+//   descriptionClassName?: string;
+
+//   /** Controlled Accordion (optional) */
+//   open?: boolean;
+
+//   /** Callback when toggled (optional) */
+//   onToggle?: () => void;
+// }
+
+// export default function AccordionCard({
+//   imageSrc,
+//   title,
+//   description,
+//   expandContent,
+//   className,
+//   imageClassName,
+//   titleClassName,
+//   descriptionClassName,
+//   open,
+//   onToggle,
+// }: AccordionCardProps) {
+//   // Uncontrolled state (if parent does not control state)
+//   const [internalOpen, setInternalOpen] = useState(false);
+
+//   const isOpen = open !== undefined ? open : internalOpen;
+
+//   const handleToggle = () => {
+//     if (onToggle) onToggle();
+//     else setInternalOpen(!internalOpen);
+//   };
+
+//   return (
+//     <Card
+//       className={
+//         className
+//           ? className
+//           : "w-[360px] border border-gray-300 rounded-lg shadow-sm px-2 py-2"
+//       }
+//     >
+//       <div className="flex items-start gap-6">
+//         {/* Image Area */}
+//         {imageSrc && (
+//           <div className="relative">
+//             <img
+//               src={imageSrc}
+//               alt=""
+//               className={
+//                 imageClassName
+//                   ? imageClassName
+//                   : "w-[120px] h-[120px] rounded-md border border-gray-300"
+//               }
+//             />
+
+//             {/* Toggle Button — only if expandContent exists */}
+//             {expandContent && (
+//               <button
+//                 className={`flex items-center justify-center absolute bottom-2 left-1/2 -translate-x-1/2 size-9 bg-black/70 hover:bg-black/90 rounded-full transition-transform duration-300 ${
+//                   isOpen ? "rotate-180" : "rotate-0"
+//                 }`}
+//                 onClick={handleToggle}
+//               >
+//                 <ChevronDown size={22} className="text-white" />
+//               </button>
+//             )}
+//           </div>
+//         )}
+
+//         {/* Text Section */}
+//         <div className="flex-1">
+//           <CardTitle
+//             className={
+//               titleClassName ??
+//               "font-Bitter font-bold text-[20px] leading-tight text-[#45818e] mb-2"
+//             }
+//           >
+//             {title}
+//           </CardTitle>
+
+//           <CardDescription
+//             className={
+//               descriptionClassName ??
+//               "font-Bitter text-[15px] text-[#2F2F2F]"
+//             }
+//           >
+//             {description}
+//           </CardDescription>
+//         </div>
+//       </div>
+
+//       {/* Expand Area */}
+//       {expandContent && (
+//         <div
+//           className={`transition-all duration-500 overflow-hidden ${
+//             isOpen ? "max-h-[250px] opacity-100 mt-4" : "max-h-0 opacity-0"
+//           }`}
+//         >
+//           {expandContent}
+//         </div>
+//       )}
+//     </Card>
+//   );
+// }
+
+// import { useState } from "react";
+// import DownCard from "@/components/card/down-card";
+// import Header from "@/components/header/header";
+// import Title from "@/components/title.tsx";
+// import { Link } from "react-router-dom";
+
+// export default function Awards() {
+//   const [openCards, setOpenCards] = useState<{ [key: string]: boolean }>({});
+
+//   // Reusable toggle function
+//   const toggleCard = (key: string) => {
+//     setOpenCards((prev) => ({ ...prev, [key]: !prev[key] }));
+//   };
+
+//   return (
+//     <>
+//       <Header />
+//       <Title heading="Awards" />
+
+//       <div className="gap-9 mx-24 my-8">
+
+//         <div className="flex justify-center gap-16 mt-10 flex-wrap p-6 rounded-lg">
+
+//           {/* CARD 1 */}
+//           <DownCard
+//             src="/assets/images/Erasmus.jpg"
+//             title="Awarded for Ph.D"
+//             description={
+//               <>
+//                 <Link to="https://icephd.org/" target="_blank" className="underline text-[#5A5A5A]">
+//                   Erasmus Mundus Joint Doctorate Program (EMJD-ICE)
+//                 </Link>
+//                 &nbsp; scholarship awarded by European Union from 2015–2019.
+//               </>
+//             }
+//             downImage={<img src="/assets/images/large_ICE_400x400.png" className="w-[155px] h-[155px]" />}
+//             showdownImage={openCards["phd"]}
+//             onToggle={() => toggleCard("phd")}
+//           />
+
+//           {/* CARD 2 */}
+//           <DownCard
+//             src="/assets/images/Erasmus.jpg"
+//             title="Awarded for Joint International Master JIM (CS)"
+//             description={
+//               <>
+//                 <Link to="https://www.idt.mdh.se/ideas/index.php" className="underline text-[#5A5A5A]">
+//                   IDEAS scholarship
+//                 </Link>
+//                 &nbsp; for Joint International Master (JIM).
+//               </>
+//             }
+//             downImage={<img src="/assets/images/logo.jpg" className="w-[155px] h-[155px]" />}
+//             showdownImage={openCards["jim"]}
+//             onToggle={() => toggleCard("jim")}
+//           />
+
+//           {/* AUR CARDS (Unlimited) */}
+//           <DownCard
+//             src="/assets/images/sample.png"
+//             title="Any Other Scholarship"
+//             description="Add as many cards as you want."
+//             downImage={<img src="/assets/images/sample.png" className="w-[155px] h-[155px]" />}
+//             showdownImage={openCards["otherScholarship"]}
+//             onToggle={() => toggleCard("otherScholarship")}
+//           />
+
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// import { useState, ReactNode } from "react";
+// import { ChevronDown } from "lucide-react";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+
+// interface PostCardProps {
+//   src?: string;
+//   title?: string | ReactNode;
+//   description?: string | ReactNode;
+//   footer?: string | ReactNode;
+//   cardClassName?: string;
+//   imgClassName?: string;
+//   descriptionClassName?: string;
+//   titleClassName?: string;
+//   footerClassName?: string;
+//   variant?: "default" | "awards";
+// }
+
+// export default function PostsCard2({
+//   src,
+//   title,
+//   description,
+//   footer,
+//   cardClassName,
+//   imgClassName,
+//   descriptionClassName,
+//   titleClassName,
+//   footerClassName,
+//   variant = "default",
+// }: PostCardProps) {
+//   const [showFooter, setShowFooter] = useState(false);
+
+//   return (
+//     <Card
+//       className={
+//         cardClassName
+//           ? cardClassName
+//           : "w-[355px] border border-gray-300 rounded-lg shadow-sm"
+//       }
+//     >
+//       {variant === "awards" ? (
+//         <>
+//           <div className="flex items-start justify-start gap-8 w-full px-1 py-1 border border-purple-300">
+//             <div className="w-auto border border-green-700">
+//               <div className="flex items-center justify-center relative">
+//                 <img
+//                   src={src}
+//                   alt="image not found"
+//                   className={
+//                     imgClassName
+//                       ? imgClassName
+//                       : "w-[100px] h-[100px] border border-gray-300 rounded-md "
+//                   }
+//                 />
+
+//                 <button
+//                   className={`flex items-center justify-center transition-transform duration-300 opacity-80 bg-[#2d2d2d] hover:bg-[#4d4d4d] rounded-full size-10 absolute bottom-2 ${
+//                     showFooter ? "rotate-180" : "rotate-0"
+//                   }`}
+//                   onClick={() => setShowFooter((prev) => !prev)}
+//                 >
+//                   <ChevronDown size={24} className="text-white " />
+//                 </button>
+//               </div>
+
+//               <div
+//                 className={`transition-all duration-500 overflow-hidden border border-red-700 p-2 ${
+//                   showFooter
+//                     ? "max-h-[200px] opacity-100 mt-4 border border-green-700 p-2"
+//                     : "max-h-0 opacity-0"
+//                 }`}
+//               >
+//                 {footer}
+//               </div>
+//             </div>
+
+//             {/* --- Text (Right Side) --- */}
+//             <div className="flex-1 w-[250px]">
+//               <CardTitle
+//                 className={
+//                   titleClassName
+//                     ? titleClassName
+//                     : "font-Bitter font-bold text-[21px] leading-[22px] text-[#45818e] py-5"
+//                 }
+//               >
+//                 {title}
+//               </CardTitle>
+//               <CardDescription
+//                 className={
+//                   descriptionClassName
+//                     ? descriptionClassName
+//                     : "font-Bitter font-normal text-[16px] text-[#2F2F2F]"
+//                 }
+//               >
+//                 {description}
+//               </CardDescription>
+//             </div>
+//           </div>
+//         </>
+//       ) : (
+//         <>
+//           {/* --- Default Layout --- */}
+//           <CardHeader className="p-0">
+//             <img src={src} alt="image not found" />
+//             <CardTitle
+//               className={
+//                 titleClassName
+//                   ? titleClassName
+//                   : "p-6 font-Bitter font-bold text-[20px] text-[#45818e] text-center"
+//               }
+//             >
+//               {title}
+//             </CardTitle>
+//           </CardHeader>
+
+//           <CardContent className="p-0">
+//             <CardDescription
+//               className={
+//                 descriptionClassName
+//                   ? descriptionClassName
+//                   : "px-3 font-Bitter text-[16.5px] text-[#2F2F2F] text-center"
+//               }
+//             >
+//               {description}
+//             </CardDescription>
+//           </CardContent>
+
+//           <CardFooter
+//             className={
+//               footerClassName
+//                 ? footerClassName
+//                 : "p-6 font-Bitter text-[16.5px] text-[#2F2F2F] text-center"
+//             }
+//           >
+//             {footer}
+//           </CardFooter>
+//         </>
+//       )}
+//     </Card>
+//   );
+// }
+///////////////////////////////////////////////////////////////////////
+
+// import { useState, ReactNode } from "react";
+// import { ChevronDown } from "lucide-react";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+
+// interface PostCardProps {
+//   src?: string;
+//   title?: string | ReactNode;
+//   description?: string | ReactNode;
+//   footer?: string | ReactNode;
+//   cardClassName?: string;
+//   imgClassName?: string;
+//   descriptionClassName?: string;
+//   titleClassName?: string;
+//   footerClassName?: string;
+//   variant?: "default" | "awards";
+// }
+
+// export default function PostsCard2({
+//   src,
+//   title,
+//   description,
+//   footer,
+//   cardClassName,
+//   imgClassName,
+//   descriptionClassName,
+//   titleClassName,
+//   footerClassName,
+//   variant = "default",
+// }: PostCardProps) {
+//   const [showFooter, setShowFooter] = useState(false);
+
+//   // Common class names
+//   const defaultCardClasses = "w-[355px] border border-gray-300 rounded-lg shadow-sm";
+//   const defaultTitleClasses = "font-Bitter font-bold text-[20px] text-[#45818e] text-center";
+//   const defaultDescriptionClasses = "font-Bitter text-[16.5px] text-[#2F2F2F] text-center";
+//   const defaultFooterClasses = "font-Bitter text-[16.5px] text-[#2F2F2F] text-center";
+//   const defaultImgClasses = "border border-gray-300 rounded-md";
+
+//   if (variant === "awards") {
+//     return (
+//       <Card className={cardClassName || defaultCardClasses}>
+//         <div className="flex items-start justify-start gap-8 w-full px-1 py-1">
+//           {/* Left Side - Image with toggle button */}
+//           <div className="w-auto">
+//             <div className="flex items-center justify-center relative">
+//               <img
+//                 src={src}
+//                 alt="Award"
+//                 className={imgClassName || `w-[100px] h-[100px] ${defaultImgClasses}`}
+//               />
+//               <button
+//                 className={`flex items-center justify-center transition-transform duration-300 opacity-80 bg-[#2d2d2d] hover:bg-[#4d4d4d] rounded-full size-10 absolute bottom-2 ${
+//                   showFooter ? "rotate-180" : "rotate-0"
+//                 }`}
+//                 onClick={() => setShowFooter((prev) => !prev)}
+//               >
+//                 <ChevronDown size={24} className="text-white" />
+//               </button>
+//             </div>
+
+//             {/* Collapsible Footer */}
+//             <div
+//               className={`transition-all duration-500 overflow-hidden ${
+//                 showFooter ? "max-h-[200px] opacity-100 mt-4 p-2" : "max-h-0 opacity-0"
+//               }`}
+//             >
+//               {footer}
+//             </div>
+//           </div>
+
+//           {/* Right Side - Text Content */}
+//           <div className="flex-1 w-[250px]">
+//             <CardTitle className={titleClassName || "font-Bitter font-bold text-[21px] leading-[22px] text-[#45818e] py-5"}>
+//               {title}
+//             </CardTitle>
+//             <CardDescription className={descriptionClassName || "font-Bitter font-normal text-[16px] text-[#2F2F2F]"}>
+//               {description}
+//             </CardDescription>
+//           </div>
+//         </div>
+//       </Card>
+//     );
+//   }
+
+//   // Default variant
+//   return (
+//     <Card className={cardClassName || defaultCardClasses}>
+//       <CardHeader className="p-0">
+//         <img src={src} alt="Post" className={imgClassName} />
+//         <CardTitle className={titleClassName || `p-6 ${defaultTitleClasses}`}>
+//           {title}
+//         </CardTitle>
+//       </CardHeader>
+
+//       <CardContent className="p-0">
+//         <CardDescription className={descriptionClassName || `px-3 ${defaultDescriptionClasses}`}>
+//           {description}
+//         </CardDescription>
+//       </CardContent>
+
+//       <CardFooter className={footerClassName || `p-6 ${defaultFooterClasses}`}>
+//         {footer}
+//       </CardFooter>
+//     </Card>
+//   );
+// }
+//////////////////////////////////////////////////////////////////////////
+
+// import { useState } from "react";
+// import { ChevronDown } from "lucide-react";
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+// import { ReactNode } from "react";
+
+// interface PostCardProps {
+//   src?: string;
+//   title?: string | ReactNode;
+//   description?: string | ReactNode;
+//   footer?: string | ReactNode;
+//   cardClassName?: string;
+//   imgClassName?: string;
+//   descriptionClassName?: string;
+//   titleClassName?: string;
+//   footerClassName?: string;
+//   variant?: "default" | "awards";
+// }
+
+// export default function PostsCard2({
+//   src,
+//   title,
+//   description,
+//   footer,
+//   cardClassName,
+//   imgClassName,
+//   descriptionClassName,
+//   titleClassName,
+//   footerClassName,
+//   variant = "default",
+// }: PostCardProps) {
+//   const [showFooter, setShowFooter] = useState(false);
+
+//   return (
+//     <Card
+//       className={
+//         cardClassName ? cardClassName : "w-[355px] border-none shadow-none"
+//       }
+//     >
+//       {variant === "awards" ? (
+//         <>
+//           {/* --- Image + Text Side by Side --- */}
+//           <div className="flex items-center justify-center gap-5 w-full px-6 py-4">
+//             {/* --- Image + Arrow --- */}
+//             <div className="flex flex-col items-center justify-center">
+//               <img
+//                 src={src}
+//                 alt="image not found"
+//                 className={
+//                   imgClassName
+//                     ? imgClassName
+//                     : "w-[120px] h-[120px] object-contain"
+//                 }
+//               />
+//               <button
+//                 className={`mt-2 transition-transform duration-300 ${
+//                   showFooter ? "rotate-90" : "rotate-0"
+//                 }`}
+//                 onClick={() => setShowFooter((prev) => !prev)}
+//               >
+//                 <ChevronDown size={26} />
+//               </button>
+//             </div>
+
+//             {/* --- Text (Right Side) --- */}
+//             <div className="flex-1">
+//               <CardTitle
+//                 className={
+//                   titleClassName
+//                     ? titleClassName
+//                     : "font-Bitter font-bold text-[18px] text-[#45818e] mb-1"
+//                 }
+//               >
+//                 {title}
+//               </CardTitle>
+//               <CardDescription
+//                 className={
+//                   descriptionClassName
+//                     ? descriptionClassName
+//                     : "font-Bitter font-normal text-[15px] text-[#2F2F2F] leading-relaxed"
+//                 }
+//               >
+//                 {description}
+//               </CardDescription>
+//             </div>
+//           </div>
+
+//           {/* --- Footer Toggle --- */}
+//           <div
+//             className={`transition-all duration-500 overflow-hidden ${
+//               showFooter ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+//             }`}
+//           >
+//             <CardFooter
+//               className={
+//                 footerClassName
+//                   ? footerClassName
+//                   : "p-4 flex justify-center border-t"
+//               }
+//             >
+//               {footer}
+//             </CardFooter>
+//           </div>
+//         </>
+//       ) : (
+//         <>
+//           {/* --- Default Layout --- */}
+//           <CardHeader className="p-0">
+//             <img src={src} alt="image not found" />
+//             <CardTitle
+//               className={
+//                 titleClassName
+//                   ? titleClassName
+//                   : "p-6 font-Bitter font-bold text-[20px] text-[#45818e] text-center"
+//               }
+//             >
+//               {title}
+//             </CardTitle>
+//           </CardHeader>
+
+//           <CardContent className="p-0">
+//             <CardDescription
+//               className={
+//                 descriptionClassName
+//                   ? descriptionClassName
+//                   : "px-3 font-Bitter text-[16.5px] text-[#2F2F2F] text-center"
+//               }
+//             >
+//               {description}
+//             </CardDescription>
+//           </CardContent>
+
+//           <CardFooter
+//             className={
+//               footerClassName
+//                 ? footerClassName
+//                 : "p-6 font-Bitter text-[16.5px] text-[#2F2F2F] text-center"
+//             }
+//           >
+//             {footer}
+//           </CardFooter>
+//         </>
+//       )}
+//     </Card>
+//   );
+// }
+
+// cardClassName="max-w-[600px] bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center"
+// titleClassName="pt-4 font-Bitter font-bold text-[22px] text-[#45818e] text-center"
+// descriptionClassName="px-4 font-Bitter font-normal text-[17px] leading-[26px] text-[#5A5A5A] text-center"
+// footerClassName="pt-4 pb-2"
 
 // import {
 //   FormControl,
@@ -140,20 +753,6 @@
 //     />
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //              description={
 //               <>
