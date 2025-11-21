@@ -1,4 +1,4 @@
-import AccordionCard from "@/components/card/down-card";
+import AccordionCard from "@/components/accordian";
 import Footer from "@/components/footer";
 import Header from "@/components/header/header";
 import Title from "@/components/title.tsx";
