@@ -8,6 +8,7 @@ interface AccordionCardProps {
   description?: string | ReactNode;
   expandContent?: ReactNode;
   cardClassName?: string;
+  innerClassName?: string;
   imageClassName?: string;
   titleClassName?: string;
   descriptionClassName?: string;
@@ -21,6 +22,7 @@ export default function AccordionCard({
   description,
   expandContent,
   cardClassName,
+  innerClassName,
   imageClassName,
   titleClassName,
   descriptionClassName,
@@ -39,7 +41,7 @@ export default function AccordionCard({
   return (
     <Card className={cardClassName ? cardClassName : "w-[355px]"}>
       <>
-        <div className="flex items-start justify-start gap-8 w-full px-1 py-1">
+        <div className={innerClassName ? innerClassName : "flex items-start justify-start gap-8 w-full px-1 py-1"}>
           <div className="w-auto">
             <div className="flex items-center justify-center relative">
               <img
