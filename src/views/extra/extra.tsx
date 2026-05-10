@@ -1,131 +1,136 @@
-import AccordionCard from "@/components/accordian";
-import Header from "@/components/header/header";
-import Title from "@/components/title.tsx";
-import { Separator } from "@/components/ui/separator";
-import { Link } from "react-router-dom";
-
-export default function Contact() {
-  return (
-    <>
-      <Header />
-      <Title heading="Contact Information " />
-
-      <div className="gap-9 mx-24 my-8">
-        <AccordionCard
-          imageSrc="/assets/images/Subhan.jpg"
-          title="Love to hear from you!"
-          description={
-            <>
-              <p className="font-Bitter font-normal text-[17px] leading-[18px] text-[#5A5A5A] text-justify">
-                Please send me your message whenever you want. I am just an
-                email away from you.
-              </p>
-              <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                Email:&nbsp;
-                <Link
-                  to="https://mail.google.com/mail/u/0/#inbox"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  subhan.ullah@nu.eud.pk
-                </Link>
-              </span>
-              <br />
-
-              <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                Cell Phone: 00923439733083
-              </span>
-              <br />
-
-              <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                LinkedIn:&nbsp;
-                <Link
-                  to="https://www.linkedin.com/in/subhan-ullah"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  linkedin.com/in/subhan-ullah
-                </Link>
-              </span>
-              <br />
-
-              <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                <Link
-                  to="https://orcid.org/0000-0002-3925-621X"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  https://orcid.org/0000-0002-3925-621X
-                </Link>
-              </span>
-              <br />
-            </>
-          }
-          imageClassName="w-[365px] h-[290px]"
-          titleClassName="font-Bitter font-bold text-[22px] leading-[24px] text-[#45818e] py-8"
-          cardClassName="w-auto border-none shadow-none"
-          innerClassName="flex items-start justify-start gap-80 w-full px-1 py-1"
-          descriptionClassName="font-Bitter font-normal text-[17px] text-[#5A5A5A] leading-[32px]"
-        />
-        <Separator className="h-0.5 my-7" />
-
-        <div className="w-full min-h-screen bg-gray-50 p-8 border border-red-500">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* LEFT SIDE — CONTACT FORM */}
-            <div className="bg-white shadow-lg rounded-xl p-6 border border-green-500">
-              <div className="bg-white shadow-md p-6 mb-10 rounded-xl border">
-                <h3 className="text-xl font-semibold mb-4">Office Address</h3>
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  Office 204B, Second floor, Department of Computer Science,
-                  <br />
-                  FAST National University of Computer & Emerging Sciences,
-                  <br />
-                  Islamabad Campus, 3 A. K. Brohi Road, Sector H-11/4,
-                  Islamabad, Pakistan.
-                  <br />
-                  Office: +92 (051) 111 128 128 Ext. 644
-                </p>
-              </div>
-
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSf_Bovw202LRHFQBH0vrAbA9G9bgzgh6UDUI-_yrPLr4ofq8Q/viewform?embedded=true"
-                className="w-full h-[850px] rounded-md"
-              ></iframe>
-            </div>
-
-            {/* RIGHT SIDE — LOCATION + CALENDAR */}
-            <div className="flex flex-col gap-8">
-              {/* OFFICE ADDRESS */}
-
-              {/* LOCATION MAP */}
-              <div className="bg-white shadow-md p-6 rounded-xl border">
-                <h3 className="text-xl font-semibold mb-4">My Location</h3>
-
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18..."
-                  className="w-full h-72 rounded-lg border"
-                  loading="lazy"
-                ></iframe>
-              </div>
-
-              {/* GOOGLE CALENDAR */}
-              <div className="bg-white shadow-md p-6 rounded-xl border">
-                <h3 className="text-xl font-semibold mb-4">My Calendar</h3>
-
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID"
-                  className="w-full h-96 rounded-lg border"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
 
 
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+// import AccordionCard from "@/components/accordian";
+// import Header from "@/components/header/header";
+// import Title from "@/components/title.tsx";
+// import { Separator } from "@/components/ui/separator";
+// import { Link } from "react-router-dom";
+
+// export default function Contact() {
+//   return (
+//     <>
+//       <Header />
+//       <Title heading="Contact Information " />
+
+//       <div className="mx-24 my-8 gap-9">
+//         <AccordionCard
+//           imageSrc="/assets/images/Subhan.jpg"
+//           title="Love to hear from you!"
+//           description={
+//             <>
+//               <p className="font-Bitter font-normal text-[17px] leading-[18px] text-[#5A5A5A] text-justify">
+//                 Please send me your message whenever you want. I am just an
+//                 email away from you.
+//               </p>
+//               <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+//                 Email:&nbsp;
+//                 <Link
+//                   to="https://mail.google.com/mail/u/0/#inbox"
+//                   target="_blank"
+//                   className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+//                 >
+//                   subhan.ullah@nu.eud.pk
+//                 </Link>
+//               </span>
+//               <br />
+
+//               <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+//                 Cell Phone: 00923439733083
+//               </span>
+//               <br />
+
+//               <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+//                 LinkedIn:&nbsp;
+//                 <Link
+//                   to="https://www.linkedin.com/in/subhan-ullah"
+//                   target="_blank"
+//                   className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+//                 >
+//                   linkedin.com/in/subhan-ullah
+//                 </Link>
+//               </span>
+//               <br />
+
+//               <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+//                 <Link
+//                   to="https://orcid.org/0000-0002-3925-621X"
+//                   target="_blank"
+//                   className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+//                 >
+//                   https://orcid.org/0000-0002-3925-621X
+//                 </Link>
+//               </span>
+//               <br />
+//             </>
+//           }
+//           imageClassName="w-[365px] h-[290px]"
+//           titleClassName="font-Bitter font-bold text-[22px] leading-[24px] text-[#45818e] py-8"
+//           cardClassName="w-auto border-none shadow-none"
+//           innerClassName="flex items-start justify-start gap-80 w-full px-1 py-1"
+//           descriptionClassName="font-Bitter font-normal text-[17px] text-[#5A5A5A] leading-[32px]"
+//         />
+//         <Separator className="h-0.5 my-7" />
+
+//         <div className="w-full min-h-screen p-8 border border-red-500 bg-gray-50">
+//           <div className="grid grid-cols-1 gap-10 mx-auto max-w-7xl lg:grid-cols-2">
+//             {/* LEFT SIDE — CONTACT FORM */}
+//             <div className="p-6 bg-white border border-green-500 shadow-lg rounded-xl">
+//               <div className="p-6 mb-10 bg-white border shadow-md rounded-xl">
+//                 <h3 className="mb-4 text-xl font-semibold">Office Address</h3>
+//                 <p className="text-sm leading-relaxed text-gray-700">
+//                   Office 204B, Second floor, Department of Computer Science,
+//                   <br />
+//                   FAST National University of Computer & Emerging Sciences,
+//                   <br />
+//                   Islamabad Campus, 3 A. K. Brohi Road, Sector H-11/4,
+//                   Islamabad, Pakistan.
+//                   <br />
+//                   Office: +92 (051) 111 128 128 Ext. 644
+//                 </p>
+//               </div>
+
+//               <iframe
+//                 src="https://docs.google.com/forms/d/e/1FAIpQLSf_Bovw202LRHFQBH0vrAbA9G9bgzgh6UDUI-_yrPLr4ofq8Q/viewform?embedded=true"
+//                 className="w-full h-[850px] rounded-md"
+//               ></iframe>
+//             </div>
+
+//             {/* RIGHT SIDE — LOCATION + CALENDAR */}
+//             <div className="flex flex-col gap-8">
+//               {/* OFFICE ADDRESS */}
+
+//               {/* LOCATION MAP */}
+//               <div className="p-6 bg-white border shadow-md rounded-xl">
+//                 <h3 className="mb-4 text-xl font-semibold">My Location</h3>
+
+//                 <iframe
+//                   src="https://www.google.com/maps/embed?pb=!1m18..."
+//                   className="w-full border rounded-lg h-72"
+//                   loading="lazy"
+//                 ></iframe>
+//               </div>
+
+//               {/* GOOGLE CALENDAR */}
+//               <div className="p-6 bg-white border shadow-md rounded-xl">
+//                 <h3 className="mb-4 text-xl font-semibold">My Calendar</h3>
+
+//                 <iframe
+//                   src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID"
+//                   className="w-full border rounded-lg h-96"
+//                 ></iframe>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
 
 // import { ReactNode, useState } from "react";
 // import { ChevronDown } from "lucide-react";
@@ -270,9 +275,9 @@ export default function Contact() {
 //       <Header />
 //       <Title heading="Awards" />
 
-//       <div className="gap-9 mx-24 my-8">
+//       <div className="mx-24 my-8 gap-9">
 
-//         <div className="flex justify-center gap-16 mt-10 flex-wrap p-6 rounded-lg">
+//         <div className="flex flex-wrap justify-center gap-16 p-6 mt-10 rounded-lg">
 
 //           {/* CARD 1 */}
 //           <DownCard
@@ -372,9 +377,9 @@ export default function Contact() {
 //     >
 //       {variant === "awards" ? (
 //         <>
-//           <div className="flex items-start justify-start gap-8 w-full px-1 py-1 border border-purple-300">
+//           <div className="flex items-start justify-start w-full gap-8 px-1 py-1 border border-purple-300">
 //             <div className="w-auto border border-green-700">
-//               <div className="flex items-center justify-center relative">
+//               <div className="relative flex items-center justify-center">
 //                 <img
 //                   src={src}
 //                   alt="image not found"
@@ -521,10 +526,10 @@ export default function Contact() {
 //   if (variant === "awards") {
 //     return (
 //       <Card className={cardClassName || defaultCardClasses}>
-//         <div className="flex items-start justify-start gap-8 w-full px-1 py-1">
+//         <div className="flex items-start justify-start w-full gap-8 px-1 py-1">
 //           {/* Left Side - Image with toggle button */}
 //           <div className="w-auto">
-//             <div className="flex items-center justify-center relative">
+//             <div className="relative flex items-center justify-center">
 //               <img
 //                 src={src}
 //                 alt="Award"
@@ -636,7 +641,7 @@ export default function Contact() {
 //       {variant === "awards" ? (
 //         <>
 //           {/* --- Image + Text Side by Side --- */}
-//           <div className="flex items-center justify-center gap-5 w-full px-6 py-4">
+//           <div className="flex items-center justify-center w-full gap-5 px-6 py-4">
 //             {/* --- Image + Arrow --- */}
 //             <div className="flex flex-col items-center justify-center">
 //               <img
@@ -851,7 +856,7 @@ export default function Contact() {
 //               <SelectContent>
 //                 <div className="p-2">
 //                   <Input
-//                     className="w-full border rounded p-2"
+//                     className="w-full p-2 border rounded"
 //                     placeholder="Search..."
 //                     value={search}
 //                     onChange={(e) => setSearch(e.target.value)}
@@ -875,7 +880,7 @@ export default function Contact() {
 //                 ))} */}
 //               </SelectContent>
 //             </Select>
-//             <FormMessage className="text-red-600 text-sm font-normal" />
+//             <FormMessage className="text-sm font-normal text-red-600" />
 //           </div>
 //         </div>
 //       )}
@@ -1022,14 +1027,14 @@ export default function Contact() {
 //   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 //   return (
-//     <nav className="bg-headercolor sticky top-0 w-full h-14 flex justify-between items-center px-4 md:px-8">
+//     <nav className="sticky top-0 flex items-center justify-between w-full px-4 bg-headercolor h-14 md:px-8">
 //       {/* Left Section - Logo */}
-//       <div className="text-white font-bold text-nowrap">
+//       <div className="font-bold text-white text-nowrap">
 //         <Link to="/">Subhan Ullah (Ph.D)</Link>
 //       </div>
 
 //       {/* Center Section - Navigation Links (Hidden on Small Screens) */}
-//       <div className="hidden md:flex space-x-4">
+//       <div className="hidden space-x-4 md:flex">
 //         <NavLink className={navlinkClass} to="/">Home</NavLink>
 //         <NavLink className={navlinkClass} to="/about">About</NavLink>
 //         <NavLink className={navlinkClass} to="/Team">Team</NavLink>
@@ -1047,20 +1052,20 @@ export default function Contact() {
 //       {/* Right Section - Search Bar & Mobile Menu Button */}
 //       <div className="flex items-center space-x-4">
 //         {/* Search Bar */}
-//         <form className="hidden md:flex items-center bg-gradient-to-r from-black to-cyan-400 text-white p-1 rounded border border-white">
+//         <form className="items-center hidden p-1 text-white border border-white rounded md:flex bg-gradient-to-r from-black to-cyan-400">
 //           <input
-//             className="bg-transparent text-inherit border-none outline-none placeholder:text-gray-300"
+//             className="bg-transparent border-none outline-none text-inherit placeholder:text-gray-300"
 //             type="text"
 //             placeholder="Search"
 //           />
-//           <button className="w-6 h-6 grid place-items-center cursor-pointer">
+//           <button className="grid w-6 h-6 cursor-pointer place-items-center">
 //             <i className="bi bi-search"></i>
 //           </button>
 //         </form>
 
 //         {/* Mobile Menu Button */}
 //         <button
-//           className="md:hidden text-white text-2xl"
+//           className="text-2xl text-white md:hidden"
 //           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
 //         >
 //           <FiMenu />
@@ -1069,7 +1074,7 @@ export default function Contact() {
 
 //       {/* Mobile Navigation Menu */}
 //       {isMobileMenuOpen && (
-//         <div className="absolute top-14 left-0 w-full bg-headercolor flex flex-col items-center space-y-2 py-4 md:hidden">
+//         <div className="absolute left-0 flex flex-col items-center w-full py-4 space-y-2 top-14 bg-headercolor md:hidden">
 //           <NavLink className={navlinkClass} to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
 //           <NavLink className={navlinkClass} to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink>
 //           <NavLink className={navlinkClass} to="/Team" onClick={() => setMobileMenuOpen(false)}>Team</NavLink>
@@ -1083,13 +1088,13 @@ export default function Contact() {
 //             <DropdownMenuDemo />
 //           </NavLink>
 //           {/* Search Bar for Mobile */}
-//           <form className="flex items-center bg-gradient-to-r from-black to-cyan-400 text-white p-1 rounded border border-white">
+//           <form className="flex items-center p-1 text-white border border-white rounded bg-gradient-to-r from-black to-cyan-400">
 //             <input
-//               className="bg-transparent text-inherit border-none outline-none placeholder:text-gray-300"
+//               className="bg-transparent border-none outline-none text-inherit placeholder:text-gray-300"
 //               type="text"
 //               placeholder="Search"
 //             />
-//             <button className="w-6 h-6 grid place-items-center cursor-pointer">
+//             <button className="grid w-6 h-6 cursor-pointer place-items-center">
 //               <i className="bi bi-search"></i>
 //             </button>
 //           </form>
@@ -1109,8 +1114,8 @@ export default function Contact() {
 //   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
 //   return (
-//     <nav className="bg-headercolor sticky top-0 w-full h-14 flex space-x-4">
-//       <div className="float-left p-4 text-white font-bold text-nowrap w-1/3">
+//     <nav className="sticky top-0 flex w-full space-x-4 bg-headercolor h-14">
+//       <div className="float-left w-1/3 p-4 font-bold text-white text-nowrap">
 //         <NavLink to="/">Subhan Ullah (Ph.D)</NavLink>
 //       </div>
 //       <div className="w-2/3 pt-1.5">
@@ -1215,15 +1220,15 @@ export default function Contact() {
 //   };
 
 //   return (
-//     <header className="bg-slate-200 border-b-2 border-gray-200 font-DM">
-//       <div className="container mx-auto py-4 px-4 md:flex md:items-center md:justify-between">
+//     <header className="border-b-2 border-gray-200 bg-slate-200 font-DM">
+//       <div className="container px-4 py-4 mx-auto md:flex md:items-center md:justify-between">
 //         <div className="flex items-center justify-between">
 //           <a href="#" className="text-2xl font-semibold text-gray-800">
 //             <img className="w-20" src="WellnessFusion.png" alt="" />
 //           </a>
 //           <button
 //             onClick={toggleNav}
-//             className="block md:hidden border border-gray-600 p-2 rounded text-gray-600 hover:bg-gray-200 focus:outline-none focus:bg-gray-300"
+//             className="block p-2 text-gray-600 border border-gray-600 rounded md:hidden hover:bg-gray-200 focus:outline-none focus:bg-gray-300"
 //           >
 //             <svg
 //               className={`w-6 h-6 ${openNav ? "hidden" : "block"}`}
@@ -1255,7 +1260,7 @@ export default function Contact() {
 //             </svg>
 //           </button>
 //         </div>
-//         <nav className="hidden md:flex space-x-4">{navList()}</nav>
+//         <nav className="hidden space-x-4 md:flex">{navList()}</nav>
 //         <div
 //           className={`${
 //             openNav ? "" : "hidden"
@@ -1273,7 +1278,7 @@ export default function Contact() {
 //               openAvatarDropdown ? "block" : "hidden"
 //             } bg-slate-300 rounded shadow-md mt-2 space-y-2`}
 //           >
-//             <div className="p-4 flex flex-col ">
+//             <div className="flex flex-col p-4 ">
 //               <NavLink to="/profile">Profile</NavLink>
 //               <NavLink to="/dashboard">Dashboard</NavLink>
 //             </div>
@@ -1302,10 +1307,10 @@ export default function Contact() {
 //     "w-10 h-10 p-2 hover:bg-iconcolor group-[.active]:bg-iconcolor border-2 border-solid border-emeraldc rounded-xl";
 
 //   return (
-//     <nav className=" border-2 border-solid border-b-neutral-500">
-//       <div className="primary-nav px-10 text-nowrap bg-white flex flex-col items-center sm:flex-row sm:justify-between">
+//     <nav className="border-2 border-solid border-b-neutral-500">
+//       <div className="flex flex-col items-center px-10 bg-white primary-nav text-nowrap sm:flex-row sm:justify-between">
 //         <div
-//           className="border-2 border-solid border-yellow-500 justify-items-center"
+//           className="border-2 border-yellow-500 border-solid justify-items-center"
 //           style={navLinkStyles({ isActive: true })}
 //         >
 //           <img src="/logo.png" alt="logo" />

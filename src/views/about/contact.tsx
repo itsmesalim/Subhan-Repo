@@ -73,7 +73,7 @@ export default function Contact() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 border border-blue-500">
             {/* LEFT SIDE — CONTACT FORM */}
             <div className="bg-white shadow-lg p-1 border border-green-500">
-              <div className="bg-white shadow-md p-1 mb-5 border border-purple-800">
+              <div className="bg-white shadow-md py-8 mb-5 border border-purple-800">
                 <h3 className="text-xl font-semibold mb-4">Office Address</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] text-justify">
                   Office 204B, Second floor, Department of Computer Science,
@@ -89,14 +89,14 @@ export default function Contact() {
 
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSf_Bovw202LRHFQBH0vrAbA9G9bgzgh6UDUI-_yrPLr4ofq8Q/viewform?embedded=true"
-                className="w-full h-[600px] rounded-md border border-pink-800"
+                className="w-full h-[700px] rounded-md border border-pink-800"
               ></iframe>
             </div>
 
             {/* RIGHT SIDE — LOCATION + CALENDAR */}
             <div className="flex flex-col gap-8 border border-yellow-800">
               {/* LOCATION MAP */}
-              <div className="bg-white shadow-md p-1 justify-items-center border">
+              <div className="bg-white shadow-md p-1 justify-items-center border border-cyan-400">
                 <h3 className="text-xl font-semibold">My Location</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] p-5 text-justify">
                   Find my location here...
@@ -111,8 +111,12 @@ export default function Contact() {
               </div>
 
               {/* GOOGLE CALENDAR */}
-              <div className="bg-white shadow-md p-1 rounded-xl border">
-                <h3 className="text-xl font-semibold p-5">My Calendar</h3>
+              <div className="bg-white shadow-md p-1 justify-items-center border">
+                <h3 className="text-xl font-semibold">My Calendar</h3>
+                <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] p-5 text-justify">
+                  Please have a look into my calendar if you want any personal
+                  meeting with me.
+                </p>
 
                 <iframe
                   src="https://calendar.google.com/calendar/embed?src=subhan.ullah%40nu.edu.pk&ctz=Asia%2FKarachi"
