@@ -31,11 +31,16 @@ export default function PostsCard({
   return (
     <Card
       className={
-        cardClassName ? cardClassName : "w-[355px] border-none shadow-none"
+        cardClassName ? cardClassName : "w-full border-none shadow-none"
       }
     >
       <CardHeader className="p-0">
-        <img src={src} alt="image not found" />
+        {/* <img src={src} alt="image not found" /> */}
+        <img
+          src={src}
+          alt="image not found"
+          className="object-cover w-full h-auto"
+        />
         <CardTitle
           className={
             titleClassName

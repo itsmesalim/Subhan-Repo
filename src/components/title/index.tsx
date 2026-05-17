@@ -8,7 +8,7 @@ interface TitleProps {
 export default function Title({ heading, title }: TitleProps) {
   return (
     <>
-      <div className="grid grid-cols-3 m-3 ml-24 justify-items-start ">
+      <div className="grid grid-cols-3 p-4 md:px-8 lg:pl-24 lg:pr-0">
         <div className="content-center col-span-3 space-y-5 lg:col-span-2">
           <h1 className="font-Bitter font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-[#45818e]">
             {heading}

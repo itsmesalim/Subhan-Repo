@@ -5,7 +5,7 @@ import { Sidebar } from "../side-bar";
 export default function Header() {
   return (
     <>
-      <nav className="sticky top-0 z-50 flex items-center w-full h-14 px-4 bg-headercolor">
+      <nav className="sticky top-0 z-50 flex items-center w-full px-4 h-14 bg-headercolor">
         <div className="flex items-center gap-2 lg:hidden">
           <Sidebar />
 
@@ -22,10 +22,10 @@ export default function Header() {
           <NavigationMenuDemo />
         </div>
 
-        <div className="ml-auto flex items-center gap-3">
+        <div className="items-center hidden gap-3 ml-auto sm:flex">
           <form className="flex items-center p-1 text-white border border-white rounded bg-gradient-to-r from-black to-cyan-800">
             <input
-              className="w-28 px-2 bg-transparent border-none outline-none text-inherit placeholder:text-gray-300 sm:w-32 md:w-36 lg:w-32"
+              className="px-2 bg-transparent border-none outline-none w-28 text-inherit placeholder:text-gray-300 sm:w-32 md:w-36 lg:w-32"
               type="text"
               placeholder="Search"
             />
