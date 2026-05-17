@@ -1,8 +1,7 @@
-//import PostsCard from "@/components/card";
 import PostsCard from "@/components/card";
 import Footer from "@/components/footer";
 import Header from "@/components/header/header";
-import Title from "@/components/title.tsx";
+import Title from "@/components/title";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
 
@@ -14,19 +13,20 @@ export default function Home() {
         heading="Subhan Ullah"
         title={`Associate Professor${"\n"} FAST, National University of Computer and Emerging Sciences, Islamabad.`}
       />
-      <div className="gap-9 mx-24 my-8">
-        <div className="grid grid-flow-col grid-rows-1 gap-9">
+
+        <div className="px-4 my-8 md:px-8 lg:px-24">
+        <div className="grid items-start grid-cols-1 gap-9 lg:grid-cols-[300px_minmax(0,1fr)] lg:items-start">
           <img
             src="/assets/images/subhan nu.jpg"
             alt="subhan_nu"
-            className=" w-72 h-72"
+            className="mx-auto w-full max-w-[220px] md:max-w-[260px] h-auto lg:max-w-[300px] lg:mx-0"
           />
 
-          <div className="grid grid-rows-1 gap-4 my-3  ">
-            <h2 className="font-Bitter font-bold mb-2 text-[20px] leading-[25px] text-[#45818e] ">
+          <div className="grid grid-rows-1 gap-4 my-3 lg:my-0 lg:max-w-[860px]">
+            <h2 className="font-Bitter font-bold mb-2 text-[18px] md:text-[19px] lg:text-[20px] leading-[25px] text-[#45818e] ">
               Welcome and glad to have you here...
             </h2>
-            <p className="font-Bitter font-normal text-[18px] leading-[24px] text-[#000000] text-justify">
+            <p className="font-Bitter font-normal text-[16px] md:text-[17px] lg:text-[18px] leading-[24px] text-[#2F2F2F] text-justify lg:max-w-[860px]">
               <Link
                 to="/biography"
                 className="text-[#4A86E8] hover:text-[#3d72c9]"
@@ -51,7 +51,7 @@ export default function Home() {
               Committees).
             </p>
 
-            <p className="font-Bitter font-normal text-[18px] leading-[24px] text-[#000000] text-justify">
+            <p className="font-Bitter font-normal text-[16px] md:text-[17px] lg:text-[18px] leading-[24px] text-[#2F2F2F] text-justify">
               His
               <Link
                 to="/research"

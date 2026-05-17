@@ -15,7 +15,7 @@ export function NavigationMenuDemo() {
   const navigate = useNavigate();
 
   return (
-    <NavigationMenu className="hidden lg:inline-flex">
+    <NavigationMenu className="hidden lg:flex">
       {menuData.map((item) => {
         if (item.children && item.children.length > 0) {
           return (

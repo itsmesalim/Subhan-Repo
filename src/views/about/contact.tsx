@@ -1,6 +1,6 @@
 import AccordionCard from "@/components/accordian";
 import Header from "@/components/header/header";
-import Title from "@/components/title.tsx";
+import Title from "@/components/title";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
 

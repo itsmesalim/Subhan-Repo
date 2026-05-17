@@ -1,7 +1,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header/header";
 import Profile from "@/components/profile";
-import Title from "@/components/title.tsx";
+import Title from "@/components/title";
 
 export default function Group() {
   return (
