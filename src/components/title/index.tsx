@@ -8,8 +8,8 @@ interface TitleProps {
 export default function Title({ heading, title }: TitleProps) {
   return (
     <>
-      <div className="grid grid-cols-3 p-4 md:px-8 lg:pl-24 lg:pr-0">
-        <div className="content-center col-span-3 space-y-5 lg:col-span-2">
+      <div className="grid grid-cols-3 pl-4 md:px-8 lg:pl-24 lg:pr-0">
+        <div className="content-center col-span-3 py-4 space-y-5 lg:col-span-2">
           <h1 className="font-Bitter font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-[#45818e]">
             {heading}
           </h1>
@@ -21,7 +21,7 @@ export default function Title({ heading, title }: TitleProps) {
         <img
           src="/assets/images/subhan.png"
           alt="subhan"
-          className="hidden justify-self-end rounded-full size-[345px] lg:inline-flex"
+          className="hidden justify-self-end rounded-full size-[345px] lg:inline-flex "
         />
       </div>
 
