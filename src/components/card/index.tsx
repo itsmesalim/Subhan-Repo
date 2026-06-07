@@ -17,6 +17,7 @@ interface PostCardProps {
   descriptionClassName?: string;
   titleClassName?: string;
   footerClassName?: string;
+  imgClassName?: string;
 }
 export default function PostsCard({
   src,
@@ -27,6 +28,7 @@ export default function PostsCard({
   descriptionClassName,
   titleClassName,
   footerClassName,
+  imgClassName,
 }: PostCardProps) {
   return (
     <Card
@@ -39,7 +41,7 @@ export default function PostsCard({
         <img
           src={src}
           alt="image not found"
-          className="object-cover w-full h-auto"
+          className={imgClassName ? imgClassName : "object-cover w-full h-auto"}
         />
         <CardTitle
           className={

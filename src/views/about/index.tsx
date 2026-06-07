@@ -11,44 +11,48 @@ export default function About() {
       <Header />
       <Title heading="About me" title="This is my about page." />
 
-      <div className="mx-24 my-8 gap-9">
-        <div className="grid grid-flow-col grid-rows-1 gap-[120px] ">
-          <PostsCard
-            src="/assets/images/subhan nu.jpg"
-            title={
-              <>
-                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                  Email:&nbsp;
-                </span>
-                <Link
-                  to="https://mail.google.com/mail/u/0/#inbox"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  subhan.ullah@nu.eud.pk
-                </Link>
-                <br />
+      <div className="px-4 py-6 md:px-8 lg:px-24">
+        <div className="flex flex-col gap-[40px] lg:gap-[120px] lg:flex-row lg:items-start">
+          <div className="flex justify-center w-full lg:w-auto lg:justify-start">
+            <PostsCard
+              src="/assets/images/subhan nu.jpg"
+              title={
+                <>
+                  <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+                    Email:&nbsp;
+                  </span>
+                  <Link
+                    to="https://mail.google.com/mail/u/0/#inbox"
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    subhan.ullah@nu.eud.pk
+                  </Link>
+                  <br />
 
-                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                  Cell phone: 00923439733083
-                </span>
-                <br />
+                  <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+                    Cell phone: 00923439733083
+                  </span>
+                  <br />
 
-                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                  Love to hear from you...
-                </span>
-              </>
-            }
-            footer={
-              <button className=" font-Bitter font-normal text-[17px] bg-headercolor text-white hover:bg-[#62808e] p-1.5 w-full rounded">
-                <Link to="/contact" target="blank">
-                  Read more
-                </Link>
-              </button>
-            }
-            titleClassName="p-2 font-Bitter font-bold text-[20px] leading-[18px] text-[#45818e] text-start justify-center]"
-            footerClassName="p-1 font-Bitter font-normal text-[16.5px] leading-[22px] text-[#2F2F2F] text-center justify-center"
-          />
+                  <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+                    Love to hear from you...
+                  </span>
+                </>
+              }
+              footer={
+                <button className=" font-Bitter font-normal text-[17px] bg-headercolor text-white hover:bg-[#62808e] p-1.5 w-full rounded">
+                  <Link to="/contact" target="blank">
+                    Read more
+                  </Link>
+                </button>
+              }
+              cardClassName="border-none shadow-none"
+              titleClassName="p-2 font-Bitter font-bold text-[20px] leading-[18px] text-[#45818e] text-start justify-center]"
+              footerClassName="p-1 font-Bitter font-normal text-[16.5px] leading-[22px] text-[#2F2F2F] text-center justify-center"
+              imgClassName="object-cover w-[360px] h-auto"
+            />
+          </div>
 
           <div className="grid grid-rows-1 gap-4 my-3 ">
             <Separator className="h-1" />
