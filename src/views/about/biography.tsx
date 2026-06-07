@@ -10,9 +10,11 @@ export default function Biography() {
       <Header />
       <Title heading="Biography" />
 
-      <div className="gap-9 mx-24 my-8">
-        <div className="grid grid-flow-col grid-rows gap-[40px] ">
-          <div className=" my-3">
+      {/* <div className="mx-24 my-8 gap-9"> */}
+      <div className="px-4 py-6 md:px-8 lg:px-24">
+        {/* <div className="grid grid-flow-col grid-rows gap-[40px] "> */}
+        <div className="flex flex-col gap-[40px] lg:flex-row lg:items-start">
+          <div className="grid grid-rows-1 gap-4 my-3">
             <h2 className="font-Bitter font-bold text-[26px] leading-[25px] text-[#45818e] pb-5">
               Assistant Professor and researcher!
             </h2>
@@ -94,69 +96,71 @@ export default function Biography() {
               loves cycling, and travels whenever he can.
             </p>
           </div>
+          
+          <div className="flex justify-center w-full lg:w-auto lg:justify-start">
+            <PostsCard
+              src="/assets/images/subhan nu.jpg"
+              title={
+                <>
+                  <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+                    Email:&nbsp;
+                  </span>
+                  <Link
+                    to="mailto:subhan.ullah@nu.edu.pk"
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    subhan.ullah@nu.edu.pk
+                  </Link>
 
-          <PostsCard
-            src="/assets/images/subhan nu.jpg"
-            title={
-              <>
-                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                  Email:&nbsp;
-                </span>
-                <Link
-                  to="mailto:subhan.ullah@nu.edu.pk"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  subhan.ullah@nu.edu.pk
-                </Link>
+                  <br />
 
-                <br />
+                  <Link
+                    to="https://www.linkedin.com/in/subhan-ullah/"
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    https://www.linkedin.com/in/subhan-ullah/
+                  </Link>
 
-                <Link
-                  to="https://www.linkedin.com/in/subhan-ullah/"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  https://www.linkedin.com/in/subhan-ullah/
-                </Link>
+                  <br />
 
-                <br />
+                  <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
+                    NUCES:&nbsp;
+                  </span>
+                  <Link
+                    to="http://www.nu.edu.pk/ "
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    http://www.nu.edu.pk/
+                  </Link>
 
-                <span className="font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start">
-                  NUCES:&nbsp;
-                </span>
-                <Link
-                  to="http://www.nu.edu.pk/ "
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  http://www.nu.edu.pk/
-                </Link>
+                  <br />
 
-                <br />
+                  <Link
+                    to="http://www.aau.at"
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    http://www.aau.at
+                  </Link>
 
-                <Link
-                  to="http://www.aau.at"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  http://www.aau.at
-                </Link>
+                  <br />
 
-                <br />
-
-                <Link
-                  to="https://unige.it"
-                  target="_blank"
-                  className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
-                >
-                  https://unige.it
-                </Link>
-              </>
-            }
-            cardClassName="w-[270px] border-none shadow-none"
-            titleClassName="p-2 font-Bitter font-bold text-[20px] leading-[22px] text-[#45818e] text-start justify-center]"
-          />
+                  <Link
+                    to="https://unige.it"
+                    target="_blank"
+                    className="underline font-Bitter font-normal text-[17px] text-[#5A5A5A] text-start"
+                  >
+                    https://unige.it
+                  </Link>
+                </>
+              }
+              cardClassName="lg:w-[270px] border-none shadow-none"
+              titleClassName="p-2 font-Bitter font-bold text-[20px] leading-[22px] text-[#45818e] text-start justify-center]"
+            />
+          </div>
         </div>
       </div>
 

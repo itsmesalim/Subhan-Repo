@@ -3,9 +3,15 @@
 
 
 ///////////////////////////////////////////////////////////////////////////
+//  <div className="px-4 py-6 md:px-8 lg:px-24">
+//         <div className="flex flex-col gap-[40px] lg:gap-[120px] lg:flex-row lg:items-start">
+//           <div className="flex justify-center w-full lg:w-auto lg:justify-start">
+//             <PostsCard
 
 
 
+// <div className="grid grid-rows-1 gap-4 my-3 ">
+    
 // import AccordionCard from "@/components/accordian";
 // import Header from "@/components/header/header";
 // import Title from "@/components/title.tsx";
