@@ -9,7 +9,8 @@ export default function Group() {
       <Header />
       <Title heading="Group" />
 
-      <div className="grid gap-12 mx-24 my-20">
+      {/* <div className="grid gap-12 mx-24 my-20"> */}
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <Profile
           src="/assets/images/Sohail.jpeg"
           title="Muhammad Sohail"

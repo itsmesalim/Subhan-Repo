@@ -17,7 +17,7 @@ export default function Awards() {
       <Header />
       <Title heading="Awards" />
 
-      <div className="gap-9 mx-24 my-8">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <h2 className="font-Bitter font-bold text-[17px] leading-[25px] text-[#45818e]">
           Academic scholarships awarded to Dr. Subhan Ullah during his academic
           career:
@@ -32,27 +32,34 @@ export default function Awards() {
         <ul className="list-[square] list-inside font-Bitter font-normal text-[17px] leading-[28px] text-[#5A5A5A] text-justify">
           <li>
             EMJD-ICE scholarship
-            <b className="text-[#000000]">(Fully funded)</b> for Ph.D. awarded
+            <b className="text-[#5A5A5A]">(Fully funded)</b> for Ph.D. awarded
             by European Union
           </li>
           <li>
-            IDEAS scholarship <b className="text-[#000000]">(Fully funded)</b>
+            IDEAS scholarship <b className="text-[#5A5A5A]">(Fully funded)</b>
             for Joint International Master (JIM) awarded by European Union
           </li>
           <li>
-            Talent scholarship <b className="text-[#000000]">(Fully funded)</b>
+            Talent scholarship <b className="text-[#5A5A5A]">(Fully funded)</b>
             for MS (CS)awarded by Worker Welfare Board, Pakistan
           </li>
           <li>
             Talent scholarship
-            <b className="text-[#000000]">(Partially funded)</b> for BS (CS)
+            <b className="text-[#5A5A5A]">(Partially funded)</b> for BS (CS)
             awarded by Worker Welfare Board, Pakistan
           </li>
         </ul>
 
-        <div className="flex justify-center gap-16 mt-10 flex-wrap rounded-lg p-2">
+        <div className="grid w-full grid-cols-1 gap-16 mt-10 justify-items-center lg:grid-cols-2">
           <AccordionCard
             imageSrc="/assets/images/Erasmus.jpg"
+            expandContent={
+              <img
+                src="/assets/images/large_ICE_400x400.png"
+                alt="ICE Logo"
+                className="w-[155px] h-[155px] object-contain"
+              />
+            }
             title="Awarded for Ph.D"
             description={
               <>
@@ -68,14 +75,7 @@ export default function Awards() {
                 2015–2019.
               </>
             }
-            expandContent={
-              <img
-                src="/assets/images/large_ICE_400x400.png"
-                alt="ICE Logo"
-                className="w-[155px] h-[155px] object-contain"
-              />
-            }
-            imageClassName="w-[165px] h-[210px]"
+            imageClassName="lg:w-[165px] lg:h-[210px]"
             cardClassName="w-auto border-none shadow-none"
             open={openCards["phd"]}
             onToggle={() => toggleCard("phd")}
@@ -83,6 +83,13 @@ export default function Awards() {
 
           <AccordionCard
             imageSrc="/assets/images/Erasmus.jpg"
+            expandContent={
+              <img
+                src="/assets/images/logo.jpg"
+                alt="University Logo"
+                className="w-[155px] h-[155px] object-contain"
+              />
+            }
             title="Awarded for Joint International Master JIM (CS)"
             description={
               <>
@@ -98,21 +105,14 @@ export default function Awards() {
                 in Darmstadt University of Applied Sciences, Darmstadt, Germany.
               </>
             }
-            expandContent={
-              <img
-                src="/assets/images/logo.jpg"
-                alt="University Logo"
-                className="w-[155px] h-[155px] object-contain"
-              />
-            }
-            imageClassName="w-[165px] h-[210px]"
+            imageClassName="lg:w-[165px] lg:h-[210px]"
             cardClassName="w-auto border-none shadow-none"
             open={openCards["jim"]}
             onToggle={() => toggleCard("jim")}
           />
         </div>
 
-        <div className="flex justify-center gap-16 flex-wrap rounded-lg p-2">
+        <div className="grid w-full grid-cols-1 gap-16 mt-10 justify-items-center lg:grid-cols-2">
           <AccordionCard
             imageSrc="/assets/images/wwf.png"
             title="Awarded for BS(CS)"
@@ -129,7 +129,7 @@ export default function Awards() {
                 &nbsp; Pakistan from 2003-2007.
               </>
             }
-            imageClassName="w-[200px] h-[180px]"
+            imageClassName="lg:w-[165px] lg:h-[210px]"
             cardClassName="w-auto border-none shadow-none"
           />
 
@@ -149,7 +149,7 @@ export default function Awards() {
                 &nbsp; Pakistan from 2010-2013.
               </>
             }
-            imageClassName="w-[200px] h-[180px]"
+            imageClassName="lg:w-[165px] lg:h-[210px]"
             cardClassName="w-auto border-none shadow-none"
           />
         </div>

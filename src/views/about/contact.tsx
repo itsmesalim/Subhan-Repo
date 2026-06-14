@@ -10,7 +10,7 @@ export default function Contact() {
       <Header />
       <Title heading="Contact Information " />
 
-      <div className="gap-9 mx-24 my-8">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <AccordionCard
           imageSrc="/assets/images/Subhan.jpg"
           title="Love to hear from you!"
@@ -69,12 +69,12 @@ export default function Contact() {
         />
         <Separator className="h-0.5 my-7" />
 
-        <div className="w-full min-h-screen bg-gray-50 p-1 border border-red-500">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 border border-blue-500">
+        <div className="w-full min-h-screen p-1 border border-red-500 bg-gray-50">
+          <div className="grid grid-cols-1 gap-10 mx-auto border border-blue-500 max-w-7xl lg:grid-cols-2">
             {/* LEFT SIDE — CONTACT FORM */}
-            <div className="bg-white shadow-lg p-1 border border-green-500">
-              <div className="bg-white shadow-md py-8 mb-5 border border-purple-800">
-                <h3 className="text-xl font-semibold mb-4">Office Address</h3>
+            <div className="p-1 bg-white border border-green-500 shadow-lg">
+              <div className="py-8 mb-5 bg-white border border-purple-800 shadow-md">
+                <h3 className="mb-4 text-xl font-semibold">Office Address</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] text-justify">
                   Office 204B, Second floor, Department of Computer Science,
                   <br />
@@ -96,7 +96,7 @@ export default function Contact() {
             {/* RIGHT SIDE — LOCATION + CALENDAR */}
             <div className="flex flex-col gap-8 border border-yellow-800">
               {/* LOCATION MAP */}
-              <div className="bg-white shadow-md p-1 justify-items-center border border-cyan-400">
+              <div className="p-1 bg-white border shadow-md justify-items-center border-cyan-400">
                 <h3 className="text-xl font-semibold">My Location</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] p-5 text-justify">
                   Find my location here...
@@ -111,7 +111,7 @@ export default function Contact() {
               </div>
 
               {/* GOOGLE CALENDAR */}
-              <div className="bg-white shadow-md p-1 justify-items-center border">
+              <div className="p-1 bg-white border shadow-md justify-items-center">
                 <h3 className="text-xl font-semibold">My Calendar</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] p-5 text-justify">
                   Please have a look into my calendar if you want any personal

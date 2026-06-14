@@ -8,7 +8,7 @@ export default function CountriesVisited() {
       <Header />
       <Title heading="Countries Visited" />
 
-      <div className="gap-9 mx-24 mt-10 mb-20">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <p className="pt-3 font-Bitter font-normal text-[17px] leading-[20px] text-[#5A5A5A] text-justify">
           Travel, in the younger sort, is a part of education; in the elder, a
           part of experience (Francis Bacon). Dr. Subhan Ullah have been visited

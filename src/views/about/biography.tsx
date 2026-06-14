@@ -10,7 +10,6 @@ export default function Biography() {
       <Header />
       <Title heading="Biography" />
 
-      {/* <div className="mx-24 my-8 gap-9"> */}
       <div className="px-4 py-6 md:px-8 lg:px-24">
         {/* <div className="grid grid-flow-col grid-rows gap-[40px] "> */}
         <div className="flex flex-col gap-[40px] lg:flex-row lg:items-start">

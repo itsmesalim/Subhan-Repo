@@ -41,7 +41,13 @@ export default function AccordionCard({
   return (
     <Card className={cardClassName ? cardClassName : "w-[355px]"}>
       <>
-        <div className={innerClassName ? innerClassName : "flex items-start justify-start gap-8 w-full px-1 py-1"}>
+        <div
+          className={
+            innerClassName
+              ? innerClassName
+              : "flex flex-col lg:flex-row items-start justify-start gap-8 w-full px-1 py-1"
+          }
+        >
           <div className="w-auto">
             <div className="flex items-center justify-center relative">
               <img
