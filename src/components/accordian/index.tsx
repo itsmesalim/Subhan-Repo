@@ -11,6 +11,7 @@ interface AccordionCardProps {
   innerClassName?: string;
   imageClassName?: string;
   titleClassName?: string;
+  tdDivClassName?: string;
   descriptionClassName?: string;
   open?: boolean;
   onToggle?: () => void;
@@ -25,6 +26,7 @@ export default function AccordionCard({
   innerClassName,
   imageClassName,
   titleClassName,
+  tdDivClassName,
   descriptionClassName,
   open,
   onToggle,
@@ -49,7 +51,7 @@ export default function AccordionCard({
           }
         >
           <div className="w-auto">
-            <div className="flex items-center justify-center relative">
+            <div className="relative flex items-center justify-center">
               <img
                 src={imageSrc}
                 alt="image not found"
@@ -85,7 +87,7 @@ export default function AccordionCard({
             )}
           </div>
 
-          <div className="flex-1 w-[260px]">
+          <div className={tdDivClassName ? tdDivClassName :"flex-1 w-[260px]"}>
             <CardTitle
               className={
                 titleClassName

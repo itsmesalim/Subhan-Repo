@@ -9,7 +9,8 @@ export default function ResearchCollaborators() {
       <Header />
       <Title heading="Research collaborators" />
 
-      <div className="gap-9 mx-24 my-8">
+      {/* <div className="mx-24 my-8 gap-9"> */}
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <div className="grid grid-rows-1 gap-4 my-3">
           <p className="font-Bitter font-normal text-[17px] leading-[20px] text-[#5A5A5A] text-justify">
             Dr. Subhan Ullah welcomes research collaboration at the national and

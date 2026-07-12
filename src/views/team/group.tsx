@@ -10,18 +10,20 @@ export default function Group() {
       <Title heading="Group" />
 
       {/* <div className="grid gap-12 mx-24 my-20"> */}
-      <div className="px-4 py-6 md:px-8 lg:px-24">
+      <div className="px-4 py-6 border border-red-600 md:px-8 lg:px-24">
         <Profile
           src="/assets/images/Sohail.jpeg"
           title="Muhammad Sohail"
           description="Muhammad Sohail (Ph.D Student) is working on Intrusion Detection
-              in the Internet of Things (IoT) Using Machine Learning."
+          in the Internet of Things (IoT) Using Machine Learning."
+          // srcClassName="flex justify-center w-64 h-72 lg:justify-start"
+          // descriptionClassName="grid grid-rows-1 gap-4 my-3"
         />
 
         <Profile
           title="Saqlain Ahmad Bhatti"
           description="Saqlain Ahmad Bhatti (MS student) is working on Detection of
-              Adversarial Attack in IOT enabled UAV'S."
+          Adversarial Attack in IOT enabled UAV'S."
         />
         <Profile
           src="/assets/images/girl.png"

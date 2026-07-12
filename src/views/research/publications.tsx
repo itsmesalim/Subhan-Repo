@@ -8,7 +8,7 @@ export default function Publications() {
       <Header />
       <Title heading="Publications" />
 
-      <div className="gap-9 mx-24 my-8">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <div className="grid grid-rows-1 gap-4 my-3">
           <h4 className="font-Bitter font-bold text-[20px] leading-[25px] text-[#45818e] mt-10">
             Publications

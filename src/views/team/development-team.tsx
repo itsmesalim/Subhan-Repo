@@ -9,13 +9,15 @@ export default function DevelopmentTeam() {
       <Header />
       <Title heading="Development Team " />
 
-      <div className="gap-9 mx-24 my-8">
-        <div className="grid grid-rows-1 gap-4 my-3">
+      {/* <div className="mx-24 my-8 gap-9"> */}
+      <div className="px-4 py-6 md:px-8 lg:px-24 ">
+        {/* <div className="grid grid-rows-1 gap-4 my-3"> */}
           <h2 className="font-Bitter font-bold text-[26px] leading-[25px] text-[#45818e] mt-10">
             Software Development Team
           </h2>
 
-          <ul className="list-square square font-Bitter font-normal text-[17px] leading-[32px] text-[#5A5A5A] text-justify">
+          {/* <ul className="list-square square font-Bitter font-normal text-[17px] leading-[32px] text-[#5A5A5A] text-justify"> */}
+          <ul className="list-[square] list-inside font-Bitter font-normal text-[17px] leading-[28px] text-[#5A5A5A] text-justify">
             <li>
               <Link
                 to="https://www.linkedin.com/in/ibrahim66/"
@@ -136,7 +138,7 @@ export default function DevelopmentTeam() {
             </li>
           </ul>
         </div>
-      </div>
+      {/* </div> */}
 
       <Footer footer="Subhan Ullah | Copyright@2022 | Terms and conditions | Privacy policy " />
     </>

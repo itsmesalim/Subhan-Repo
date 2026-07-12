@@ -61,19 +61,20 @@ export default function Contact() {
               <br />
             </>
           }
-          imageClassName="w-[365px] h-[290px]"
-          titleClassName="font-Bitter font-bold text-[22px] leading-[24px] text-[#45818e] py-8"
-          cardClassName="w-auto border-none shadow-none"
-          innerClassName="flex items-start justify-start gap-80 w-full px-1 py-1"
-          descriptionClassName="font-Bitter font-normal text-[17px] text-[#5A5A5A] leading-[32px]"
+          cardClassName="w-full border-none shadow-none"
+          imageClassName="w-full max-w-[365px] h-auto mx-auto lg:mx-0 lg:w-[365px] lg:h-[290px]"
+          titleClassName="font-Bitter font-bold text-[22px] leading-[24px] text-[#45818e] py-8 text-left"
+          innerClassName="flex flex-col items-center w-full px-1 py-1 lg:flex-row lg:items-start lg:gap-80"
+          tdDivClassName="flex-1 w-auto"
+          descriptionClassName="font-Bitter font-normal text-[17px] w-full text-[#5A5A5A] leading-[32px] text-left"
         />
         <Separator className="h-0.5 my-7" />
 
-        <div className="w-full min-h-screen p-1 border border-red-500 bg-gray-50">
-          <div className="grid grid-cols-1 gap-10 mx-auto border border-blue-500 max-w-7xl lg:grid-cols-2">
+        <div className="w-full min-h-screen p-1 bg-gray-50">
+          <div className="grid grid-cols-1 gap-10 mx-auto max-w-7xl lg:grid-cols-2">
             {/* LEFT SIDE — CONTACT FORM */}
-            <div className="p-1 bg-white border border-green-500 shadow-lg">
-              <div className="py-8 mb-5 bg-white border border-purple-800 shadow-md">
+            <div className="p-1 bg-white shadow-lg">
+              <div className="py-8 mb-5 bg-white shadow-md">
                 <h3 className="mb-4 text-xl font-semibold">Office Address</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] text-justify">
                   Office 204B, Second floor, Department of Computer Science,
@@ -89,14 +90,14 @@ export default function Contact() {
 
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSf_Bovw202LRHFQBH0vrAbA9G9bgzgh6UDUI-_yrPLr4ofq8Q/viewform?embedded=true"
-                className="w-full h-[700px] rounded-md border border-pink-800"
+                className="w-full h-[700px] rounded-md "
               ></iframe>
             </div>
 
             {/* RIGHT SIDE — LOCATION + CALENDAR */}
-            <div className="flex flex-col gap-8 border border-yellow-800">
+            <div className="flex flex-col gap-8 ">
               {/* LOCATION MAP */}
-              <div className="p-1 bg-white border shadow-md justify-items-center border-cyan-400">
+              <div className="p-1 bg-white border shadow-md justify-items-center">
                 <h3 className="text-xl font-semibold">My Location</h3>
                 <p className="font-Bitter font-normal text-[15px] leading-[18px] text-[#5A5A5A] p-5 text-justify">
                   Find my location here...

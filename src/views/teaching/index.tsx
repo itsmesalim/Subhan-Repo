@@ -9,7 +9,7 @@ export default function Teaching() {
       <Header />
       <Title heading="Teaching" />
 
-      <div className="gap-9 mx-24 my-8">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <p className="font-Bitter font-normal text-[17px] leading-[20px] text-[#5A5A5A] text-justify">
           Dr. Subhan Ullah, is involved in teaching and various administrative
           tasks in the department of Networks and Cybersecurity, FAST School of

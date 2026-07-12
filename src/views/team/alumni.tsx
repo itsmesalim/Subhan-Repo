@@ -9,7 +9,7 @@ export default function Alumni() {
       <Header />
       <Title heading="Alumni" />
 
-      <div className="grid gap-12 mx-24 my-20">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <Profile
           title="Muhammad Osama Khalid "
           description="Successfully completed his MS Thesis in Fall-2022."

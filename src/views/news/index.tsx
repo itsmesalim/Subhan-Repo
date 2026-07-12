@@ -11,12 +11,13 @@ export default function News() {
       <Header />
       <Title heading="News" />
 
-      <div className="gap-9 mx-24 my-8">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
         <h1 className="font-Bitter font-bold my-10 text-[24px] leading-[25px] text-[#45818e] pb-4">
           News and updates
         </h1>
 
-        <div className="grid grid-cols-3 gap-4 mb-8">
+        {/* <div className="grid grid-cols-3 gap-4 mb-8"> */}
+        <div className="grid grid-cols-1 mb-8 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           <PostsCard
             src="/assets/images/Inam phd.jpeg"
             title="As External Examiner for Ph.D. Evaluation"

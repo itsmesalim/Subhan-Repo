@@ -8,8 +8,9 @@ export default function ResearchInterest() {
       <Header />
       <Title heading="Research Interest" />
 
-      <div className="gap-9 mx-24 my-8">
-        <ul className="list-square square font-Bitter font-normal text-[17px] leading-[32px] text-[#5A5A5A] text-justify">
+      <div className="px-4 py-6 md:px-8 lg:px-24">
+        {/* <ul className="list-square square font-Bitter font-normal text-[17px] leading-[32px] text-[#5A5A5A] text-justify"> */}
+        <ul className="list-[square] list-inside font-Bitter font-normal text-[17px] leading-[28px] text-[#5A5A5A] text-justify">
           <li>
             Security and privacy for the Internet of Things (IoT) applications
             in various use-cases (e.g., smart home, smart parking, VANETs, and
